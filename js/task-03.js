@@ -17,8 +17,8 @@ const createImgGaleryRef = document.querySelector(".gallery");
 
 const imageGaleryRef = images
   .map(
-    (image) => `<li <img scr = ${image.url};
-  imgRef.alt = ${image.alt}></li>`
+    (image) =>
+      `<li class = "gallery__item"><img scr = "${image.url}" alt = "${image.alt}"></li>`
   )
   .join("");
 
