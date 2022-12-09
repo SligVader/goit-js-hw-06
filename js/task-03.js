@@ -18,9 +18,9 @@ const createImgGaleryRef = document.querySelector(".gallery");
 const imageGaleryRef = images
   .map(
     (image) =>
-      `<li class = "gallery__item"><img scr = "${image.url}" alt = "${image.alt}"></li>`
+      `<li class="gallery__list"><img class="gallery__image" src="${image.url}" alt = "${image.alt}"></li>`
   )
   .join("");
 
-createImgGaleryRef.insertAdjacentHTML("beforeend", imageGaleryRef);
-const li = document.querySelector("li");
+createImgGaleryRef.insertAdjacentHTML("afterbegin", imageGaleryRef);
+// const li = document.querySelector("li");
