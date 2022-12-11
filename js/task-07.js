@@ -1,5 +1,5 @@
 const fontSizeControlRef = document.querySelector("#font-size-control");
-const resizedTextRef = document.querySelector("#text");
+const resizedTextRef = document.querySelector(".text");
 
 resizedTextRef.style.fontSize = fontSizeControlRef.value + "px";
 
